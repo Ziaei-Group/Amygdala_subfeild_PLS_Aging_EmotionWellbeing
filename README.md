@@ -53,6 +53,8 @@ One row per included participant (N = 134). There are no missing values.
 
 Each file holds one variable:
 
+Note: the data files are too large to upload; therefore, the masks of Amygdala subregions were uploaded for users to extract their own amygdala subregion time course.
+
 | Variable | Dimensions | Type |
 |---|---|---|
 | `voxel_fc` | 141 × 570,380 | single |
