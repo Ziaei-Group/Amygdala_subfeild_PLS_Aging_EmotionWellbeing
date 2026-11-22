@@ -59,7 +59,7 @@ Note: the data files are too large to upload; therefore, the masks of Amygdala s
 |---|---|---|
 | `voxel_fc` | 141 × 570,380 | single |
 
-- **Rows (141)** are participants. The matrices hold all 141 scanned participants; 7 of them were excluded from the analysis and do not appear in `beh_osf.csv`. Use the `Order` column to select and align the 134 included participants:
+- **Rows (141)** are participants. The matrices hold all 141 scanned participants; 7 of them were excluded from the analysis and do not appear in `beh_osf.csv`(1 has excessive head motion and 6 lack cognitive measures). Use the `Order` column to select and align the 134 included participants:
 
   ```matlab
   beh = readtable('beh_osf.csv');
