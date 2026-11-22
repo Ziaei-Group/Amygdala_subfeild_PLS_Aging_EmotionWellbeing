@@ -2,7 +2,7 @@
 
 This repository contains the data and the analysis configuration used to relate voxel-wise amygdala subregion functional connectivity (FC) to emotional and cognitive resilience in younger and older adults, using behavioral Partial Least Squares (PLS).
 
-> **Citation:** [Authors]. [Title]. [Journal], [Year]. [DOI]
+> **Citation:** Ye, S., Dave, A., Lan, X. et al. Functional connectivity profile of the amygdala subfields associates with emotional well-being in aging. GeroScience (2026). https://doi.org/10.1007/s11357-026-02658-1
 > Please cite this paper if you use these data or this code.
 
 ---
@@ -67,11 +67,8 @@ Note: the data files are too large to upload; therefore, the masks of Amygdala s
   X = voxel_fc(beh.Order, :);             % 134 x 570380, same row order as beh
   ```
 
-- **Columns (570,380)** are voxels: FC between the seed ROI and each voxel, [e.g. Fisher z-transformed Pearson correlation]. Values range from about −3.1 to 4.5. About 19,900 columns are zero for every participant (voxels outside the data coverage) and can be dropped before analysis.
-- **Seed ROIs:** ROI1 = [BLA / CMA / SFA], ROI2 = [ ], ROI3 = [ ]; [hemisphere: bilateral / left / right].
-- **Voxel space:** [template, resolution, and the mask that defines the voxel order]. The mask is needed to map the vectors back into brain space. It is [included / available from …].
-
----
+- **Columns (570,380)** are voxels: FC between the seed ROI and each voxel, [e.g. Fisher z-transformed Pearson correlation]. 
+- **Seed ROIs:** ROI1 = [SFA], ROI2 = [CMA], ROI3 = [BLA]; [hemisphere: bilateral].
 
 ## 3. `myPLS_configure_v1.m`
 
@@ -147,6 +144,4 @@ myPLS_main;                                    % runs myPLS_configure_v1 interna
 
 [e.g. CC BY 4.0 for data; MIT for code]
 
-## Contact
 
-Shuer Ye — [email]
